@@ -1,0 +1,121 @@
+body {
+  margin: 0 auto;
+  width: 800px;
+  background-color: #E0E0E0;
+  font: 14px "微软雅黑", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.header {
+	background-image: url(../images/wy.jpg);
+	/*background-color: red;*/
+	height: 260px;
+}
+
+.nav {
+	background-color: white;
+	padding: 0 30px;
+}
+
+.nav ul {
+	padding: 0;
+	margin: 0 auto;
+	list-style: none;
+	line-height: 50px;
+	text-align: center;
+	font-size: 16px;
+	/*border-bottom: 1px solid #ABABAB;*/
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav li a{
+	margin: 0 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+.nav li:hover {
+	background-color: #F5F5F5;
+}
+
+.article-list {
+	padding: 0 30px;
+	background-color: white;
+}
+
+.article-item {
+	padding: 20px 0px;
+	border-top: 1px solid #ddd;
+}
+
+.article-title {
+	text-align: center;
+	font-size: 24px;
+}
+
+.article-title a{
+	text-decoration: none;
+	color: #000;
+}
+
+.article-date {
+	margin-top: 6px;
+	text-align: center;
+	font-size: 10px;
+	font-style: italic;
+	color: #bbb;
+}
+
+.article-other {
+	margin-top: 40px;
+}
+
+.article-other a{
+	font-size: 5px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #bbb;
+	padding: 3px;
+	border-radius: 5px;
+}
+
+.pager {
+	background-color: white;
+	padding: 0 30px;
+	margin-top
+}
+
+.pager ul {
+	padding: 40px;
+	margin: 0 auto;
+	list-style: none;
+	line-height: 35px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.pager li {
+	border: 1px solid #ECE4E4;
+	background-color: #F9F9F9;
+	display: inline-block;
+}
+
+.pager li a{
+	margin: 10px;
+	text-decoration: none;
+	color: #000;
+}
+
+.footer {
+	border-top: 1px solid #ECE4E4;
+	background-color: white;
+	text-align: center;
+	padding: 20px 0px;
+	color: #bbb;
+}
