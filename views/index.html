@@ -1,0 +1,12 @@
+<div class="article-list">
+	<%- partial('article/item', {collection:articles, as:'article'}) %>
+</div>
+
+
+<div class="pager">
+	<ul>
+		<% for(var i=1;i<=pages;i++) { %>
+			<li><a href="<%='/?page='+i %>"><%=i%></a></li>
+		<% } %>
+	</ul>
+</div>
