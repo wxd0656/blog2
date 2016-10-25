@@ -14,7 +14,10 @@ exports.index = function(req, res, next) {
 	if(articleType) {
 		query.type = articleType
 	}
-
+	let tag = req.query.tag || null;
+	if(tag) {	
+		query.tag = tag;
+	}
 	let option = { limit: config.articlesPerPage, skip: offset, sort: '-top -create_at'};
 
 	let ep = new EventProxy();
@@ -34,7 +37,7 @@ exports.index = function(req, res, next) {
 		for (let i of articles) {
 			i.mPreview = Markdown.markdown(i.content.substring(0, 100));
 		}
-		res.render('index', { articles: articles, pages: pages, currentPage: page });
+		res.render('index', { articles: articles, pages: pages, currentPage: page, tag: tag });
 	});
 }
 

@@ -2,5 +2,5 @@
 	<div class="article-title"><a href="<%= '/article/'+article._id %>"><%= article.title %></a></div>
 	<div class="article-date"><%= article.create_at.toLocaleString() %></div>
 	<div class="article-content"><%- article.mPreview %></div>
-	<div class="article-other"><a href=""><%= article.tag %></a></div>
+	<div class="article-other"><a href="<%= '/?tag='+article.tag %>"><%= article.tag %></a></div>
 </div>
