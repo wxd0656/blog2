@@ -5,7 +5,7 @@ var Article = require('../models').Article;
 
 exports.getArticleById = function (id, callback) {
 	// body...
-	Article.findOne({ _id: id }, callback);
+	Article.findOne({ _id: id, deleted: false }, callback);
 }
 
 

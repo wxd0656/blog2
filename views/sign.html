@@ -1,0 +1,22 @@
+<div class="login-bg">
+	<div class="login">
+		<form action="/zmkm" method="post">
+			<div class="form-input">
+				<label>用户名：</label>
+				<input name="username"/>
+			</div>
+			<div class="form-input">
+				<label>密码：</label>
+				<input name="pwd" type="password"/>
+			</div>
+			<div class="form-input">
+				<button>登陆</button>
+			</div>
+		</form>	
+		<% if(msg) { %>
+			<div class="alert">
+				<%= msg %>
+			</div>
+		<% } %>
+	</div>
+</div>

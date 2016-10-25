@@ -1,0 +1,23 @@
+<div class="detial-bg">
+  <div class='article_header'>
+    <p class="article_title">
+      <%= article.title %>
+    </p>
+    <div class="changes">
+      <span>
+        发布于 <%= article.create_at.toLocaleString() %>
+      </span>
+      <span>
+        <%= article.visit_count %> 次浏览
+      </span>
+      <span>
+        最后编辑于 <%= article.update_at.toLocaleString() %>
+      </span>
+    </div>
+  </div>
+  <div class='article'>
+    <div class='article_content'>
+      <%- article.mdContent %>
+    </div>
+  </div>
+</div>
